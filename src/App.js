@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import TextCard from "./components/Articles/TextCard";
+import Carousels from "./components/Carousel/Carousels";
+import Footer from "./components/Footer/Footer";
+import HappeningNow from "./components/HappeningNow/HappeningNow";
+import Header from "./components/Header/Header";
+import Hero from "./components/Hero/Hero";
+import Jumbotron from "./components/Jumbotron/Jumbotron";
+import Trending from "./components/Trending/Trending";
+import Home from "./components/Pages/Home";
+import { Fragment } from "react";
+import Story from "./components/Pages/Story";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      {/* <Home /> */}
+      <Story />
+    </Fragment>
   );
-}
+};
 
 export default App;
