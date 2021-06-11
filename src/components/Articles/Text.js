@@ -70,6 +70,21 @@ const CommentWrapper = styled.div`
   }
 `;
 
+const Video = styled.div`
+  width: 327px;
+  height: 180px;
+  margin-top: 40px;
+  background: black;
+  margin: auto;
+  @media (min-width: 769px) {
+    width: 608px;
+    height: 300px;
+  }
+  @media (min-width: 1280px) {
+    width: 100%;
+  }
+`;
+
 const Text = (props) => {
   return (
     <TextWrapper>
@@ -85,6 +100,7 @@ const Text = (props) => {
             <div>{element.comment}</div>
           </Comment>
         ))}
+        <Video />
       </CommentWrapper>
     </TextWrapper>
   );
