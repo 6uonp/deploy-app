@@ -6,6 +6,9 @@ const FooterWrapper = styled.div`
   height: 200px;
   display: flex;
   align-items: center;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const FooterNav = styled.div`

@@ -28,7 +28,7 @@ const Carousels = () => {
     };
   });
   return (
-    <Carousel>
+    <Carousel autoplay={true}>
       <div>
         <CarouselContentWrapper>
           <TredingArticle

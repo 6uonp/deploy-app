@@ -5,7 +5,6 @@ const TextCartWrapper = styled.div`
   width: 327px;
   display: flex;
   flex-direction: column;
-
   margin: auto;
   @media (min-width: 769px) {
     width: 608px;

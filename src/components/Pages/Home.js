@@ -19,11 +19,15 @@ const articles = [
   },
 ];
 
-const HomeWrapper = styled.div``;
+const HomeWrapper = styled.div`
+  background: #ebeded;
+  padding-bottom: 80px;
+`;
 
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
+  background: white;
   @media (min-width: 1280px) {
     flex-direction: row;
   }

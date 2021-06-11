@@ -3,14 +3,16 @@ import styled from "styled-components";
 const TextWrapper = styled.div`
   font-family: Helvetica;
   width: 327px;
-  margin: auto;
+  margin: 40px auto 24px auto;
   @media (min-width: 769px) {
     width: 608px;
+    margin: 80px auto;
   }
   @media (min-width: 1280px) {
     width: 1160px;
     display: flex;
     flex-direction: row;
+    margin: 100px auto;
   }
 `;
 

@@ -9,12 +9,24 @@ import Trending from "./components/Trending/Trending";
 import Home from "./components/Pages/Home";
 import { Fragment } from "react";
 import Story from "./components/Pages/Story";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 const App = () => {
   return (
     <Fragment>
-      {/* <Home /> */}
-      <Story />
+      <Header />
+      <Router>
+        <Switch>
+          <Route exact path="/deploy-app">
+            <Home />
+          </Route>
+          <Route exact path="/story">
+            <Story />
+          </Route>
+        </Switch>
+      </Router>
+
+      <Footer />
     </Fragment>
   );
 };

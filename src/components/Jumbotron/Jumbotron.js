@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 const JumbotronWrapper = styled.div`
   width: 100%;
@@ -46,7 +47,9 @@ const Jumbotron = (props) => {
         <hr></hr>
         <h2>{props.header}</h2>
         <span>{props.content}</span>
-        <button>LEARN MORE</button>
+        <button>
+          <Link to="/story">LEARN MORE</Link>
+        </button>
       </JumbotronContent>
     </JumbotronWrapper>
   );
